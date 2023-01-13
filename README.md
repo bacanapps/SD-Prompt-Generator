@@ -23,7 +23,7 @@ In this fork, prompt phrases are separated into general adjectives, character ad
 
 The general adjectives add randomness to the output, but also can influence the overall visual impression of an image. I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
 
-The expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided to focus on getting decent quality output off creativity alone.
+The expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided for style and quality prompts to focus on getting decent-quality output off creativity alone.
 
 ![003659 099091dd 3062602010](https://user-images.githubusercontent.com/122599135/212419237-8c5f4942-388b-43d0-8390-c5dfae3aff34.png)
 

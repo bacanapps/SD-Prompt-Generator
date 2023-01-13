@@ -1,5 +1,5 @@
 # SD-Prompt-Generator
-An edit of javi22020's Prompt Generator script that tries to create random prompts with a 'character with (object) [random relation to setting] [setting]' structure that works well for providing inspiration.
+An edit of javi22020's Prompt Generator script that tries to create random prompts with a `adjective` `character` `with` `object` `random relation to setting` `setting` structure that works well for providing inspiration.
 
 ## Usage
 

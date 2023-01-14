@@ -3,12 +3,14 @@ An edit of javi22020's Prompt Generator script that tries to create random promp
 
 ## Usage
 
-To use, have Python installed, and download promptgen.py, or copy the contents and paste them into an empty document and save as promptgen.py, or whatever name you prefer. Put the .py somewhere you can access easily. Or, put it in your home folder (on Linux) or somewhere with the PATH edited on Windows, if you want to easily call the script without typing or pasting the file's path.
+To use, have Python installed, and download/clone [promptgen.py](https://github.com/526christian/SD-Prompt-Generator/blob/main/promptgen.py), or copy the contents and paste them into an empty document and save as promptgen.py, or whatever name you prefer. Put the .py somewhere you can access easily. Or, put it in your home folder (on Linux) or somewhere with the PATH edited on Windows, if you want to easily call the script without typing or pasting the file's path.
 
 In a terminal/CLI, type
 
     python promptgen.py
-    or
+
+or
+
     python path/to/promptgen.py
 
 Press 'enter' to keep generating prompts quickly. As prompts are randomized, they will be naturally hit-or-miss, so that makes it easy to roll the dice again.
@@ -19,7 +21,7 @@ Naturally, certain phrases will be better understood by different models. For in
 
 ## Prompt explanation and examples
 
-In this fork, prompt phrases are separated into general adjectives, character adjectives, objects, characters, styles, quality prompts, and settings. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
+In this fork, prompt phrases are separated into general adjectives, object adjectives, character adjectives, objects, characters, styles, quality prompts, and settings. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
 
 The general adjectives add randomness to the output, but also can influence the overall visual impression of an image. I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
 
@@ -30,6 +32,12 @@ The expanded prompt list was built off of personal experience after thousands of
 `heavily armored operative with a intricate smartphone in a ethereal forest, fascinating, magical, emotional, low contrast, cosmic horror, eyes focus, HDR, 4k, 8k, hyperdetailed [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
 
 `Model: TheAlly's Mix II`
+
+![003824 d86c57ab 1173902681](https://user-images.githubusercontent.com/122599135/212448333-7b301e1f-4f0e-418a-afe4-a86082bf91f9.png)
+
+`scarred crewwoman with a colorful gas mask in front of a cozy mesa, warm, fascinating, dramatic, winter, motion lines, glitchcore, highres, HDR, 4k, highres [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
+
+`Model: Elldreth's Stolen Dreams`
 
 ![003689 18c8966b 2537436940](https://user-images.githubusercontent.com/122599135/212424493-770e5ccc-35f7-4c0f-9c8b-1d88b3cc8ba0.png)
 
@@ -48,3 +56,7 @@ The expanded prompt list was built off of personal experience after thousands of
 `Asian pilot with a ancient glass near a magical snowstorm, ethereal, trippy, emotional, neon lighting, epic composition, wavy, detailed, masterpiece, realistic, photorealism [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
 
 `Model: Elldreth's Stolen Dreams`
+
+## Changelog
+
+~10 PM 1/13: New prompt phrases across the board for variety and a couple fixes in the list. Added new category for object adjectives to improve prompt generation consistency. Should be better now. Updated readme.

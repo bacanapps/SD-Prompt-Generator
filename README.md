@@ -1,5 +1,5 @@
 # SD-Prompt-Generator
-An edit of javi22020's Prompt Generator script that tries to create random prompts with a `adjective` `character` `with` `object` `random relation to setting` `setting` structure that works well for providing inspiration.
+A complete expansion of javi22020's Prompt Generator script that tries to create random prompts with a structure that works well for providing inspiration. Currently generates prompts of random characters, objects/vehicles, and creatures, with random locations and visual styles. The [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) negative embeddings are recommended.
 
 ## Usage
 
@@ -7,13 +7,11 @@ To use, have Python installed, and download/clone [promptgen.py](https://github.
 
 In a terminal/CLI, type
 
-    python promptgen.py
+    python
 
-or
+Add a space, and drag and drop the .py onto the terminal/CLI to automatically fill in its path. I'd suggest copying the whole command so you can quickly access the script again later.
 
-    python path/to/promptgen.py
-
-Press 'enter' to keep generating prompts quickly. As prompts are randomized, they will be naturally hit-or-miss, so that makes it easy to roll the dice again.
+Press 'enter' to keep generating prompts of the same type quickly, or switch to another prompt type as you please. As prompts are randomized, they will be naturally hit-or-miss, so that makes it easy to roll the dice again.
 
 To add or remove phrases, or edit how many are tacked on the main prompt, edit the .py. The structure is pretty straightforward, so if you want to, you can even further break down the prompt categories and add them into the code as you like for more complex or specialized random prompting.
 
@@ -21,9 +19,7 @@ Naturally, certain phrases will be better understood by different models. For in
 
 ## Prompt explanation and examples
 
-In this fork, prompt phrases are separated into general adjectives, object adjectives, character adjectives, objects, characters, styles, quality prompts, and settings. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
-
-The general adjectives add randomness to the output, but also can influence the overall visual impression of an image. I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
+The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth. The general adjectives add randomness to the output, but also can influence the overall visual impression of an image. I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
 
 The expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided for style and quality prompts to focus on getting decent-quality output off creativity alone.
 
@@ -58,5 +54,7 @@ The expanded prompt list was built off of personal experience after thousands of
 `Model: Elldreth's Stolen Dreams`
 
 ## Changelog
+
+~3 AM 1/15: Complete restructuring of script. Now supports selection for character prompts, large object/vehicle prompts, and creature prompts. If you select object or creature, the script will randomly select from a type of object or creature and randomly select a relevant setting for that type of object or creature.
 
 ~10 PM 1/13: New prompt phrases across the board for variety and a couple fixes in the list. Added new category for object adjectives to improve prompt generation consistency. Should be better now. Updated readme.

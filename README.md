@@ -9,7 +9,7 @@ In a terminal/CLI, type
 
     python
 
-Add a space, and drag and drop the .py onto the terminal/CLI to automatically fill in its path. I'd suggest copying the whole command so you can quickly access the script again later.
+Add a space, and drag and drop `promptgen.py` onto the terminal/CLI to automatically fill in its path. I'd suggest copying the whole command so you can quickly access the script again later.
 
 Press 'enter' to keep generating prompts of the same type quickly, or switch to another prompt type as you please. As prompts are randomized, they will be naturally hit-or-miss, so that makes it easy to roll the dice again.
 
